@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">OrderDrinkApp</string>
+    <string name="brand_name">TTA Coffee Food </string>
+    <string name="slogan">Delicious to every last drop</string>
+    <string name="login">Login</string>
+    <string name="logintittle">Log <br /> in</string>
+    <string name="register">Register</string>
+    <string name="function">Admin</string>
+    <string name="create_acc">Create <br /> account</string>
+    <string name="enter_fullname">Full Name</string>
+    <string name="enter_username">Account name</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_phone">Phone number</string>
+    <string name="enter_password">Mật khẩu</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_complete">Complete</string>
+    <string name="add_sucessful">Add success!</string>
+    <string name="add_failed">Add failed!</string>
+    <string name="edit_sucessful">Edited successfully!</string>
+    <string name="edit_failed">Error while editing!</string>
+    <string name="delete_sucessful">Deleted successfully!</string>
+    <string name="delete_failed">Error while deleting!</string>
+    <string name="not_empty">Cannot be left blank!</string>
+    <string name="opentoggle">Open</string>
+    <string name="closetoggle">Close</string>
+    <string name="addTable">Add a dining table</string>
+    <string name="tablename">Name of the dining table</string>
+    <string name="addMenu">Add menu</string>
+    <string name="addmenu">Add <br /> menu</string>
+    <string name="addCategory">Add categories</string>
+    <string name="addcategory">Add <br /> type</string>
+    <string name="editcategory">Edit <br /> type</string>
+    <string name="choseimg">Select image</string>
+    <string name="qu_n_m_t_kh_u">Forgot password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="todo">TODO</string>
+</resources>

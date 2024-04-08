@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddStaffActivity"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:transitionName="transition_signup"
+    android:id="@+id/AddStaff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/img_addstaff_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/txt_addstaff_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_addstaff_back"
+                android:fontFamily="@font/muli_black"
+                android:paddingLeft="15dp"
+                android:text="Add Staff"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/txt_addstaff_Permission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Position"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_addstaff_Position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:layout_toRightOf="@id/txt_addstaff_Permission"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rd_addstaff_Manager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manager"
+                        android:textSize="16sp"
+                        android:layout_marginRight="10dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_addstaff_Staff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Staff"
+                        android:textSize="16sp"
+                        android:layout_marginRight="10dp"/>
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtl_addstaff_Fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fullname"
+                app:startIconDrawable="@drawable/ic_baseline_create_pencil"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/black"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtl_addstaff_Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/black"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtl_addstaff_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/black"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtl_addstaff_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/black"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtl_addstaff_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/black"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black"
+                app:endIconTint="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/black"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:id="@+id/txt_addstaff_Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sex:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_addstaff_Sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:layout_toRightOf="@id/txt_addstaff_Gender"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rd_addstaff_Female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:layout_marginRight="10dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_addstaff_Male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:layout_marginRight="10dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_addstaff_Orther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Orther" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+
+            <DatePicker
+                android:id="@+id/dt_addstaff_Dateofbirth"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_addstaff_Addstaff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_button"
+            android:elevation="5dp"
+            android:text="Add Staff"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</ScrollView>
