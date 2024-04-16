@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itAddTable"
+        android:title="Add Table Food"
+        />
+    <item
+        android:id="@+id/itAddCategory"
+        android:title="Add Category"
+        />
+    <item
+        android:id="@+id/itAddMenu"
+        android:title="Add Menu"
+        />
+    <item
+        android:id="@+id/itAddStaff"
+        android:title="Add Staff"
+        />
+</menu>
